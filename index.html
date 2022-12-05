@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-UA-Compatible" content="IE-edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+
+    <form  action="">
+        
+        <fieldset class="colonne">
+            <fieldset id="identification">
+                <legend>identification</legend>
+                <label>votre nom:<input type="text" placeholder="ecrire ici"></label>
+                <label>votre prenom:<input type="text"></label>
+                <label>votre courriel:<input type="email" required></label>
+                <label>telephone:<input type="tel"></label>
+                <label>age:<input type="number" min="0" max="125" required></label>
+                <label >adresse web:<input type="url"></label>
+            </fieldset>
+        </fieldset>
+        <fieldset class="colonne">
+            <fieldset id="vote">
+                <legend>votre vote</legend>
+                <label ><input type="radio" name="couleur" checked><span></span> blanc</label>
+                <label ><input type="radio" name="couleur"><span></span> bleu</label>
+                <label ><input type="radio" name="couleur"><span></span> rouge</label>
+            </fieldset>
+            
+
+            <fieldset id="option">
+                <legend>vos options</legend>
+                <label ><input type="checkbox" checked> blanc</label>
+                <label ><input type="checkbox" > bleu</label>
+                <label ><input type="checkbox" >rouge</label>
+            </fieldset>
+         
+
+
+            <fieldset>
+                <legend>commentaire</legend>
+                <textarea name="" id="" cols="30" rows="5" placeholder="ecrire vos commentaire ici"></textarea>
+            </fieldset>
+        </fieldset>
+
+        <fieldset id="boutons">
+            <input type="submit" value="Envoie">
+            <input type="reset" value="remise a 0">
+        </fieldset>
+    </form>
+</body>
+</html>

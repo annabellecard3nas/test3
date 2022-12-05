@@ -1,0 +1,60 @@
+form{
+    width: 80vw;
+    min-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px black solid;
+    justify-content: space-between;
+}
+form,#vote,#identification,#option,#boutons{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+#identification{
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 10%;
+
+}
+#identification input{
+    width: 80%;
+}
+#vote,#option{
+    justify-content: space-around;
+}
+textarea{
+    resize: none;
+    width: 80%;
+    margin: 0 auto;
+}
+.colonne{
+    flex: 0 1 40%;
+}
+
+#bouton{
+    display: flex;
+    flex: 0 1 100%;
+}
+#vote input{
+    display: none;
+}
+#vote span{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-image: url("../images/checkbox-icon-26.jpg");
+    background-size:42px 30px ;
+    background-position: -14px 15px;
+    vertical-align: middle;
+}
+#vote  input:checked~span{
+    background-position: -14px -1px;
+}
+
+/*
+fielset{
+
+}
+*/
